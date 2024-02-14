@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/MyCollege_Project/static/css/main.090fc325.css",
+    "main.js": "/MyCollege_Project/static/js/main.ddbb6b64.js",
+    "static/media/gallery.jpg": "/MyCollege_Project/static/media/gallery.7f08ea387cf18ceeb0c3.jpg",
+    "static/media/clg-1.jpg": "/MyCollege_Project/static/media/clg-1.3a45d614cc76d3039fb7.jpg",
+    "static/media/banner.png": "/MyCollege_Project/static/media/banner.896137787046ed837f10.png",
+    "static/media/library.png": "/MyCollege_Project/static/media/library.06333daf9fcee2c76f90.png",
+    "static/media/clg-3.jpg": "/MyCollege_Project/static/media/clg-3.a052fcfa9d0268518826.jpg",
+    "static/media/contact.jpg": "/MyCollege_Project/static/media/contact.d16b276452be9937e190.jpg",
+    "static/media/course.jpg": "/MyCollege_Project/static/media/course.65c775a8ecb3825f1b02.jpg",
+    "static/media/cafeteria.png": "/MyCollege_Project/static/media/cafeteria.f33027d1fb34e5cd0715.png",
+    "static/media/basketball.png": "/MyCollege_Project/static/media/basketball.383f35c9170608f41d81.png",
+    "static/media/clg-2.jpg": "/MyCollege_Project/static/media/clg-2.976d09744fe90ff20402.jpg",
+    "static/media/background.jpg": "/MyCollege_Project/static/media/background.178156c4e95feba4984d.jpg",
+    "static/media/banner2.jpg": "/MyCollege_Project/static/media/banner2.db688b4a587ef606817b.jpg",
+    "static/media/about.jpg": "/MyCollege_Project/static/media/about.4fb954bf3bfaab30b56b.jpg",
+    "index.html": "/MyCollege_Project/index.html",
+    "main.090fc325.css.map": "/MyCollege_Project/static/css/main.090fc325.css.map",
+    "main.ddbb6b64.js.map": "/MyCollege_Project/static/js/main.ddbb6b64.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.090fc325.css",
+    "static/js/main.ddbb6b64.js"
+  ]
+}
