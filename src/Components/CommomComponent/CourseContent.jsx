@@ -16,7 +16,7 @@ const CourseContent = () => {
                                 data.map(
                                     (curl, index) => {
                                         return (
-                                            <div className="col-xl-4 col-md-6 col-12" key={index}>
+                                            <div className="col-xl-4 col-md-6 col-12 mb-3" key={index}>
                                                 <div className="course-col">
                                                     <h3>{curl.head}  </h3>
                                                     <p>{curl.para} </p>

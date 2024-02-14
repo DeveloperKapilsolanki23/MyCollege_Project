@@ -19,62 +19,66 @@ const Contact = () => {
 
                 <div className="container">
                     <div className="row">
-                        <div className="contact-col">
+                        <div className="col-md-6 col-12">
+                            <div className="contact-col">
 
-                            <div>
+                                <div>
 
-                                <i className="fa-solid fa-house"></i>
+                                    <i className="fa-solid fa-house"></i>
 
-                                <span>
+                                    <span>
 
-                                    <h5> abc road, xyz building</h5>
-                                    <p> haridwar, uttrakhand</p>
+                                        <h5> abc road, xyz building</h5>
+                                        <p> haridwar, uttrakhand</p>
 
-                                </span>
+                                    </span>
+
+                                </div>
+
+                                <div>
+
+                                    <i className="fa-solid fa-phone"></i>
+
+                                    <span>
+
+                                        <h5> +91 91111111111</h5>
+                                        <p> monday to saturday , 10am to 5p</p>
+
+                                    </span>
+
+                                </div>
+                                <div>
+
+                                    <i className="fa-solid fa-envelope"></i>
+
+                                    <span>
+
+                                        <h5> developerkapilkumar@gmail.com</h5>
+                                        <p> email us for query</p>
+
+                                    </span>
+                                </div>
+
 
                             </div>
-
-                            <div>
-
-                                <i className="fa-solid fa-phone"></i>
-
-                                <span>
-
-                                    <h5> +91 91111111111</h5>
-                                    <p> monday to saturday , 10am to 5p</p>
-
-                                </span>
-
-                            </div>
-                            <div>
-
-                                <i className="fa-solid fa-envelope"></i>
-
-                                <span>
-
-                                    <h5> developerkapilkumar@gmail.com</h5>
-                                    <p> email us for query</p>
-
-                                </span>
-                            </div>
-
-
                         </div>
-                        <div className="contact-col">
+                        <div className="col-lg-6 col-12">
+                            <div className="contact-col">
 
-                            <form>
+                                <form>
 
-                                <input type="text" placeholder="Enter your name" name="" required />
-                                <input type="email" placeholder="Enter your email" name="" required />
-                                <input type="" placeholder="Enter your subject" name="" required />
-                                <textarea name="" cols="" rows="8" placeholder="Message" required></textarea>
-                                <button type="submit" className="hero-btn next-btn"> send</button>
-
-
-
-                            </form>
+                                    <input type="text" placeholder="Enter your name" name="" required />
+                                    <input type="email" placeholder="Enter your email" name="" required />
+                                    <input type="" placeholder="Enter your subject" name="" required />
+                                    <textarea name="" cols="" rows="8" placeholder="Message" required></textarea>
+                                    <button type="submit" className="hero-btn next-btn"> send</button>
 
 
+
+                                </form>
+
+
+                            </div>
                         </div>
                         <section className="footer">
 

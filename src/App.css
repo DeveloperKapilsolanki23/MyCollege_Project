@@ -143,7 +143,7 @@ nav .showMenu {
 /* ....................course............... */
 
 .course {
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding: 50px 10px 10px 10px;
     text-align: center;
@@ -164,13 +164,6 @@ nav .showMenu {
     line-height: 22px;
 }
 
-
-.row {
-
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2%;
-}
 
 .course-col {
 
@@ -211,10 +204,10 @@ nav .showMenu {
 
 .campus {
 
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
-    padding-top: 10px;
+    padding: 20px;
 
 }
 
@@ -284,11 +277,11 @@ nav .showMenu {
 
 /* ....................facilities............... */
 .facilities {
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
     padding: 30px 10px 10px 10px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 
 }
 
@@ -300,7 +293,7 @@ nav .showMenu {
 .facilities p {
     font-size: 15px;
     color: #000;
-    padding-top: 10px;
+    padding: 10px;
     font-weight: 600;
 }
 
@@ -338,9 +331,9 @@ nav .showMenu {
 
 .testimonials {
 
-    width: 80%;
+    width: 100%;
     margin: auto;
-    padding-top: 10px;
+    padding: 20px;
 }
 
 .testimonials h1 {
@@ -402,14 +395,19 @@ nav .showMenu {
 /* ....................footer............... */
 .cta {
 
-    margin: 25px auto;
-    width: 80%;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./Assests/Images/banner2.jpg');
+    margin: 25px auto;
+    width: 90%;
+    height: 400px;
     background-position: center;
     background-size: cover;
     text-align: center;
     border-radius: 10px;
-    padding: 100px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .cta h1 {
@@ -425,7 +423,7 @@ nav .showMenu {
 
     width: 100%;
     text-align: center;
-    padding: 30px 0;
+    padding: 20px;
 }
 
 .footer h4 {
@@ -482,7 +480,7 @@ nav .showMenu {
 
     width: 80%;
     margin: auto;
-    padding: 80px 0 50px 0;
+    padding: 10px 0 50px 0;
 }
 
 .about-col {
@@ -591,7 +589,7 @@ nav .showMenu {
 
     display: flex;
     align-items: start;
-    margin-bottom: 40px;
+    width: 100%;
 }
 
 .contact-col div i {
@@ -711,6 +709,8 @@ nav .showMenu {
     transform: scale(1.1);
 }
 
+
+
 @media(max-width: 768px) {
 
     /* ....................upper section............... */
@@ -762,14 +762,11 @@ nav .showMenu {
 
     /* ....................course............... */
 
-    .row {
 
-        flex-direction: column;
-    }
 
     .course {
 
-        padding: 35px;
+        /* padding: 35px; */
     }
 
     .course-col p {
@@ -787,7 +784,7 @@ nav .showMenu {
 
     .facilities {
 
-        padding: 36px;
+        padding: 20px;
     }
 
     /* ....................testimonials............... */
@@ -810,4 +807,10 @@ nav .showMenu {
         font-size: 24px;
     }
 
+}
+
+@media(max-width: 540.95px) {
+    .contact-col div h5 {
+        font-size: 15PX;
+    }
 }
