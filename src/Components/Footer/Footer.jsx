@@ -47,13 +47,13 @@ const Footer = () => {
                                 <h4>Company</h4>
                                 <ul>
                                     <li>
-                                        <a href=""> About Us</a>
+                                        <NavLink to="/aboutus">About us</NavLink>
                                     </li>
                                     <li>
                                         <a href=""> Career </a>
                                     </li>
                                     <li>
-                                        <a href="">contact Us</a>
+                                        <NavLink to="/contact">Contact</NavLink>
                                     </li>
                                 </ul>
 
