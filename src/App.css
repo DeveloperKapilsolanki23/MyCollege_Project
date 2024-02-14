@@ -1,0 +1,798 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    color: #f44336 !important;
+}
+
+/* ....................upper section............... */
+
+.header {
+
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url('./Assests/Images/banner.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 8%;
+}
+
+nav img {
+
+    width: 150px;
+
+}
+
+.nav-link {
+
+    flex: 1;
+    text-align: right;
+
+}
+
+.nav-link ul li {
+
+    list-style: none;
+    padding: 8px 12px;
+    display: inline-block;
+    position: relative;
+}
+
+.nav-link ul li a {
+
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+
+.nav-link ul li::after {
+
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #d03000;
+    margin: auto;
+    display: block;
+    transition: 0.4s all;
+}
+
+.nav-link ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.text-box h1 {
+
+    font-size: 65px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.text-box p {
+
+    font-size: 15px;
+    color: #fff;
+    padding: 10px;
+
+}
+
+.hero-btn {
+
+    text-decoration: none;
+    padding: 12px 35px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    display: inline-block;
+    transition: .4s all;
+}
+
+.hero-btn:hover {
+
+    background: #fff;
+    color: #000;
+}
+
+nav .far {
+
+    display: none;
+}
+
+/* ....................course............... */
+
+.course {
+    width: 80%;
+    margin: auto;
+    padding: 50px 10px 10px 10px;
+    text-align: center;
+}
+
+.course h1 {
+
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.course p {
+
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+    line-height: 22px;
+}
+
+
+.row {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.course-col {
+
+    flex-basis: 32%;
+    padding: 20px 18px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: #000;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    transition: .4s all;
+
+}
+
+.course-col h3 {
+    color: #9e9a9a;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.course-col p {
+
+    text-align: left;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+.course-col:hover {
+
+    box-shadow: 0 0 20px 0 rgb(57 57 57 / 97%);
+}
+
+/* ....................campus............... */
+
+.campus {
+
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.cta_color {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.campus h1 {
+
+    font-size: 35px;
+}
+
+.campus-col img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+.campus-col {
+
+    flex-basis: 31%;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+
+.layer {
+
+    font-size: 20px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+
+
+}
+
+.layer:hover {
+
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.layer h3 {
+
+    width: 100%;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.4s all;
+}
+
+.layer:hover h3 {
+
+    opacity: 1;
+    bottom: 41%;
+}
+
+/* ....................facilities............... */
+.facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 30px 10px 10px 10px;
+    margin-bottom: 50px;
+
+}
+
+.facilities h1 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.facilities p {
+    font-size: 15px;
+    color: #000;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.facilities-col {
+
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    text-align: left;
+
+}
+
+.facilities-col img {
+
+    width: 100%;
+    border-radius: 10px;
+}
+
+.facilities-col p {
+    padding: 0;
+    text-align: left;
+    color: #555;
+    font-weight: 500;
+}
+
+
+.facilities-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+    color: #f44336;
+}
+
+/* ....................testimonals............... */
+
+.testimonials {
+
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.testimonials h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.testimonials p {
+
+    margin-top: 10px;
+    text-align: center;
+}
+
+.testimonials-col {
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #000;
+    padding: 25px;
+    display: flex;
+    cursor: pointer;
+
+}
+
+.testimonials-col img {
+
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.testimonials-col p {
+
+    padding: 0;
+    text-align: left;
+    color: #fff;
+    font-weight: 400;
+
+
+}
+
+.testimonials-col h3 {
+
+    margin-top: 15px;
+    text-align: left;
+    color: #fff;
+}
+
+.testimonials-col .fa,
+.far {
+
+    color: #f44336;
+
+}
+
+/* ....................footer............... */
+.cta {
+
+    margin: 25px auto;
+    width: 80%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./Assests/Images/banner2.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius: 10px;
+    padding: 100px 0;
+}
+
+.cta h1 {
+
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+
+}
+
+
+.footer {
+
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 23px;
+
+}
+
+.footer p {
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.icons .fab {
+
+    color: #f44336;
+    margin: 5px 13px;
+    font-size: 25px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+/* ....................about............... */
+
+.Abouts_wrap {
+
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('./Assests/Images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.Abouts_wrap .text-box {
+    height: 50%;
+}
+
+.Abouts_wrap .hero-btn {
+    border-color: #fff;
+    color: #fff;
+}
+
+.sub-header h1 {
+
+    margin-top: 100px;
+}
+
+.about-us {
+
+    width: 80%;
+    margin: auto;
+    padding: 80px 0 50px 0;
+}
+
+.about-col {
+
+    flex-basis: 48%;
+    padding: 30px 2px;
+
+}
+
+.course_wrap {
+
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('./Assests/Images/course.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.gallery_wrap {
+
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('./Assests/Images/gallery.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.contact_wrap {
+
+    height: 70vh;
+    width: 100%;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('./Assests/Images/contact.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.contact_wrap p {
+    display: none;
+}
+
+.contact_wrap .hero-btn {
+    display: none;
+}
+
+.about-col img {
+
+    width: 100%;
+}
+
+.about-col h1 {
+
+    font-size: 40px;
+    padding-top: 0;
+}
+
+.about-col p {
+    color: #555;
+    font-size: 14px;
+    padding: 15px 0 25px;
+}
+
+.next-btn {
+
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #000;
+
+}
+
+/* .....................location............... */
+
+.location {
+
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe {
+
+    width: 100%;
+}
+
+/* .....................contact............... */
+
+.contact-us {
+
+    width: 80%;
+    margin: auto;
+
+}
+
+.contact-col {
+
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div {
+
+    display: flex;
+    align-items: start;
+    margin-bottom: 40px;
+}
+
+.contact-col div i {
+
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div h5 {
+
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-col input,
+.contact-col textarea {
+
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+
+}
+
+.wrap-9 {
+    background: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.wrap-9 .footers {
+    padding-top: 50px;
+    display: flex;
+}
+
+/* .footer-col {
+      width: 25%;
+  } */
+
+.wrap-9 .footer_wrap p {
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.wrap-9 .footer_wrap a {
+    text-decoration: underline !important;
+    font-family: "Roboto Slab", serif;
+    color: #f44336;
+}
+
+.wrap-9 .footer_wrap h4 {
+    font-size: 18px;
+    color: #f44336;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 26px;
+    position: relative;
+}
+
+.wrap-9 .footer_wrap h4:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: #fff;
+    width: 50px;
+    height: 2px;
+}
+
+.wrap-9 .footer_wrap ul li:not(last-child) {
+    margin-bottom: 10px;
+}
+
+.wrap-9 .footer_wrap ul li::marker {
+    color: #fff;
+}
+
+.wrap-9 .footer_wrap ul li a {
+    text-decoration: none !important;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.wrap-9 .footer_wrap ul li a:nth-child(odd):hover {
+    color: #fff;
+    padding-left: 10px;
+}
+
+.wrap-9 .footer_wrap .social-links a {
+    display: inline-block;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background: #f44336;
+    margin: 0 10px 10px 0;
+    border-radius: 50%;
+}
+
+.wrap-9 .footer_wrap .social-links a:hover {
+    color: #f44336;
+    background: #fff;
+    transform: scale(1.1);
+}
+
+@media(max-width: 768px) {
+
+    /* ....................upper section............... */
+    .text-box h1 {
+
+        font-size: 30px;
+    }
+
+    .nav-link ul li {
+
+        display: block;
+
+    }
+
+    .nav-link ul {
+
+        padding: 12px 30px;
+    }
+
+    .nav-link {
+
+        height: 100vh;
+        width: 200px;
+        background: #000;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: .4s all;
+
+    }
+
+    nav .far {
+
+        display: block;
+        font-size: 22px;
+        color: #fff;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+
+    /* ....................course............... */
+
+    .row {
+
+        flex-direction: column;
+    }
+
+    .course {
+
+        padding: 35px;
+    }
+
+    .course-col p {
+
+        padding: 20px;
+        box-sizing: border-box;
+
+    }
+
+    .about-col {
+        text-align: justify;
+    }
+
+    /* ....................facilities............... */
+
+    .facilities {
+
+        padding: 36px;
+    }
+
+    /* ....................testimonials............... */
+
+    .testimonials-col img {
+
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+
+    .testimonials-col div p {
+
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+
+    /* ....................footer............... */
+    .cta h1 {
+
+        font-size: 24px;
+    }
+
+}
