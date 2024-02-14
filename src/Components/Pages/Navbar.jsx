@@ -1,15 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import logo from '../../Assests/Images/logo.png'
+
 const Navbar = ({ type, headText }) => {
+
+    const [show, setShow] = useState(false)
+    const handleShow = () => setShow(true)
+    const handleClose = () => setShow(false)
+
     return (
         <div>
             <section className={type}>
 
                 <nav>
                     <img src={logo} />
-                    <div className="nav-link" id="navLink">
-                        <i className="far fa-times" onclick="hideMenu()"></i>
+                    <div className="nav-link" id="navLink" style={{ right: show ? "0" : "" }}>
+                        <div className="hideMenu" onClick={handleClose}>
+                            <i className="fa-solid fa-times"></i>
+                        </div>
                         <ul>
                             <li>
                                 <NavLink to="/home">Home</NavLink>
@@ -33,7 +41,9 @@ const Navbar = ({ type, headText }) => {
                         </ul>
 
                     </div>
-                    <i className="far fa-bars" onclick="showMenu()"></i>
+                    <div className="showMenu" onClick={handleShow}>
+                        <i className="fa-solid fa-bars" ></i>
+                    </div>
                 </nav>
                 <div className="text-box">
                     <h1> {headText}</h1>

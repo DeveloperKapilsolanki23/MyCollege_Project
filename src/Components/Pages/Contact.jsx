@@ -7,7 +7,7 @@ const Contact = () => {
         <div>
             <Navbar
                 type="contact_wrap" />
-            <section class="location">
+            <section className="location">
 
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221243.77871268144!2d77.97584048314972!3d29.95257576712705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909470eb8ee57c9%3A0x4e449176a640f5f3!2sHaridwar%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1628054494962!5m2!1sen!2sin"
@@ -15,15 +15,15 @@ const Contact = () => {
 
             </section>
 
-            <section class="contact-us">
+            <section className="contact-us">
 
-                <div class="container">
-                    <div class="row">
-                        <div class="contact-col">
+                <div className="container">
+                    <div className="row">
+                        <div className="contact-col">
 
                             <div>
 
-                                <i class="fa-solid fa-house"></i>
+                                <i className="fa-solid fa-house"></i>
 
                                 <span>
 
@@ -36,7 +36,7 @@ const Contact = () => {
 
                             <div>
 
-                                <i class="fa-solid fa-phone"></i>
+                                <i className="fa-solid fa-phone"></i>
 
                                 <span>
 
@@ -48,7 +48,7 @@ const Contact = () => {
                             </div>
                             <div>
 
-                                <i class="fa-solid fa-envelope"></i>
+                                <i className="fa-solid fa-envelope"></i>
 
                                 <span>
 
@@ -60,7 +60,7 @@ const Contact = () => {
 
 
                         </div>
-                        <div class="contact-col">
+                        <div className="contact-col">
 
                             <form>
 
@@ -68,7 +68,7 @@ const Contact = () => {
                                 <input type="email" placeholder="Enter your email" name="" required />
                                 <input type="" placeholder="Enter your subject" name="" required />
                                 <textarea name="" cols="" rows="8" placeholder="Message" required></textarea>
-                                <button type="submit" class="hero-btn next-btn"> send</button>
+                                <button type="submit" className="hero-btn next-btn"> send</button>
 
 
 
@@ -76,17 +76,17 @@ const Contact = () => {
 
 
                         </div>
-                        <section class="footer">
+                        <section className="footer">
 
                             <h4> Contact </h4>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                                 industry's standard dummy text ever since the 1500s. </p>
 
-                            <div class="icons">
+                            <div className="icons">
 
-                                <i class="fab fa-facebook-square"></i>
-                                <i class="fab fa-twitter-square"></i>
-                                <i class="fab fa-linkedin"></i>
+                                <i className="fab fa-facebook-square"></i>
+                                <i className="fab fa-twitter-square"></i>
+                                <i className="fab fa-linkedin"></i>
 
 
                             </div>

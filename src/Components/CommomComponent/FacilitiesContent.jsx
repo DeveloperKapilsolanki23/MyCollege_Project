@@ -17,8 +17,8 @@ const FacilitiesContent = () => {
                                 facilitiesData.map(
                                     (facilitiesData, index) => {
                                         return (
-                                            <div className="col-xl-4 col-md-6 col-12">
-                                                <div className="facilities-col" key={index}>
+                                            <div className="col-xl-4 col-md-6 col-12" key={index}>
+                                                <div className="facilities-col">
 
                                                     <img src={facilitiesData.facUrl} />
 

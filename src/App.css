@@ -43,6 +43,15 @@ nav img {
 
 }
 
+.hideMenu {
+    margin: 12px;
+    display: none;
+}
+
+.hideMenu i {
+    color: #fff;
+}
+
 .nav-link {
 
     flex: 1;
@@ -126,7 +135,7 @@ nav img {
     color: #000;
 }
 
-nav .far {
+nav .showMenu {
 
     display: none;
 }
@@ -713,12 +722,18 @@ nav .far {
     .nav-link ul li {
 
         display: block;
+        width: max-content;
+        margin: 0 auto;
 
     }
 
     .nav-link ul {
 
         padding: 12px 30px;
+    }
+
+    .hideMenu {
+        display: block;
     }
 
     .nav-link {
@@ -735,7 +750,7 @@ nav .far {
 
     }
 
-    nav .far {
+    nav .showMenu {
 
         display: block;
         font-size: 22px;
